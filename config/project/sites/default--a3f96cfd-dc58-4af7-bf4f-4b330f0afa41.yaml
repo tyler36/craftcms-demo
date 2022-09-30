@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: craftcms-demo
+primary: true
+siteGroup: a08df487-3ffd-4521-9b4f-4beaa2d94e81
+sortOrder: 1
