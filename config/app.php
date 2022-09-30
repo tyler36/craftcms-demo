@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yii Application Config
  *
@@ -24,5 +25,17 @@ return [
     'modules' => [
         'my-module' => \modules\Module::class,
     ],
-    //'bootstrap' => ['my-module'],
+    'components' => [
+        'redis' => [
+            'class' => yii\redis\Connection::class,
+            'hostname' => getenv('REDIS_HOST'),
+            'port' => getenv('REDIS_PORT'),
+            'password' => getenv('REDIS_PASSWORD'),
+        ],
+        'cache' => [
+            'class' => yii\redis\Cache::class,
+            'defaultDuration' => 86400,
+            'keyPrefix' => getenv('REDIS_KEY_PREFIX'),
+        ],
+    ],
 ];
