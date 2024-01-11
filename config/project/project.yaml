@@ -1,0 +1,22 @@
+dateModified: 1704963533
+email:
+  fromEmail: admin@example.com
+  fromName: craftcms-demo
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    14bc583c-579d-462b-ac73-f7cc167aa960: Common # Common
+    73056660-7e02-4e11-a71e-d996b10ea123: craftcms-demo # craftcms-demo
+    b8c57377-ab25-4135-bdb7-e0eb9eb354d2: craftcms-demo # craftcms-demo
+system:
+  edition: solo
+  live: true
+  name: craftcms-demo
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
